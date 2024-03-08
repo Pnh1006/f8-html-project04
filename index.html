@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 04</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -87,8 +86,140 @@
     />
     <link rel="manifest" href="./assets/images/favicons/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/images/favicons/ms-icon-144x144.png"
+    />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <!-- Header top -->
+        <div class="header-top">
+          <img
+            src="./assets/images/icons/logo.svg"
+            alt="Lucy"
+            class="header-top__img"
+          />
+          <ul class="header-top__list">
+            <li>
+              <a href="#!" class="header-top__item">Home</a>
+              <a href="#!" class="header-top__item">About</a>
+              <a href="#!" class="header-top__item">Services & Rates</a>
+              <a href="#!" class="header-top__item">Reviews</a>
+              <a href="#!" class="header-top__item">Contacts us</a>
+            </li>
+          </ul>
+
+          <div class="header-top__action">
+            <a href="#!" class="btn header-top__btn">Sign up</a>
+          </div>
+        </div>
+
+        <!-- Header content -->
+        <section class="header-hero">
+          <!-- Hero media -->
+          <section class="header__media">
+            <!-- Image 1 -->
+            <div class="header__image">
+              <img
+                src="./assets/images/img/header_1.png"
+                alt="Established & Trusted Pet Care Service"
+                class="header__image--img"
+              />
+
+              <img
+                src="./assets/images/img/header-decor-1.svg"
+                alt="Decor"
+                class="header__decor header__decor--left"
+              />
+              <img
+                src="./assets/images/img/header-decor-2.svg"
+                alt="Decor"
+                class="header__decor header__decor--right"
+              />
+            </div>
+
+            <!-- Image 2 -->
+            <div class="header__image header__image-small">
+              <img
+                src="./assets/images/img/header_2.png"
+                alt="Established & Trusted Pet Care Service"
+                class="header__image--img"
+              />
+            </div>
+
+            <!-- Info -->
+            <div class="header__hero--list">
+              <!-- Info 1 -->
+              <section class="header__hero--list__item">
+                <img
+                  src="./assets/images/img/header_3.png"
+                  alt=""
+                  class="header__hero--list__item--thumb"
+                />
+                <div class="header__hero--list__item--info">
+                  <p class="header__hero--list__item--title">Pet Health</p>
+                  <div class="header__hero--list__item--skeleton"></div>
+                  <div class="header__hero--list__item--skeleton"></div>
+                </div>
+              </section>
+
+              <div class="header__hero--list__item--separate"></div>
+
+              <!-- Info 2 -->
+              <section class="header__hero--list__item">
+                <img
+                  src="./assets/images/img/header_4.png"
+                  alt=""
+                  class="header__hero--list__item--thumb"
+                />
+                <div class="header__hero--list__item--info">
+                  <p class="header__hero--list__item--title">Pet Health</p>
+                  <div class="header__hero--list__item--skeleton"></div>
+                  <div class="header__hero--list__item--skeleton"></div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="header__content">
+            <h1 class="header__title">
+              Established & Trusted Pet Care Service
+            </h1>
+            <p class="header__desc">
+              Discover a wide variety of Pawsitive services to choose from,
+              including daycare, private walks, office duty and spa.
+            </p>
+
+            <div class="header__actions">
+              <div class="header__btn btn">
+                <a href="#!" class="btn header__content--btn">Book a Meet</a>
+                <span class="header__btn--icon">
+                  <svg
+                    width="5"
+                    height="6"
+                    viewBox="0 0 5 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.48584 0.5L3.98584 3L1.48584 5.5"
+                      stroke="#FD5056"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <a href="#!" class="header__link">Schedule a Call</a>
+            </div>
+          </section>
+        </section>
+      </div>
+    </header>
+  </body>
 </html>

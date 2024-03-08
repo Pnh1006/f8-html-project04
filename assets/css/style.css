@@ -1,11 +1,262 @@
-html {
-  font-size: 62.2%;
-}
-
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background: #fffaf5;
+}
+
+/* common */
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+}
+
+.btn {
+  border-radius: 999px;
+  color: #ff5b2e;
+  border: 1px solid #ff5b2e;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  max-width: calc(100% - 48px);
+}
+
+/* Header */
+
+.header-top {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top__item {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5e6085;
+  margin-left: 36px;
+}
+
+.header-top__item:hover {
+  color: #000958;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.header-top__btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 117px;
+  height: 50px;
+  line-height: 50px;
+  color: #000958;
+  border: 1px solid #000958;
+  padding: 18px 32px;
+}
+
+.header-hero {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__image {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 388px;
+  max-height: 488px;
+  border-radius: 16px;
+  background: #fe997b;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.header__image--img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: inherit;
+}
+
+.header__decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.header__decor--left {
+  left: -58px;
+  bottom: 10px;
+}
+
+.header__decor--right {
+  top: 16px;
+  right: -43px;
+}
+
+.header__image-small {
+  align-self: flex-end;
+  width: 186px;
+  height: 244px;
+  margin: -186px 0px 0px 349px;
+  border: 2px solid #f7dddf;
+  background: #faa7ad;
+}
+
+.header__hero--list {
+  position: absolute;
+  padding: 18px 14px;
+  width: 250px;
+  height: 156px;
+  border-radius: 10px;
+  box-shadow: -17px 14px 68px -4px #cfae8440;
+  background: #ffffff;
+  bottom: -60px;
+  left: 350px;
+}
+
+.header__hero--list__item {
+  display: flex;
+  align-items: center;
+}
+
+.header__hero--list__item--title {
+  font-family: Sora;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: left;
+  color: #181e52;
+}
+
+.header__hero--list__item--thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fec23f;
+  margin-left: 10px;
+  box-shadow: 0px 4px 21px 0px #f7a70c52;
+}
+
+.header__hero--list__item--info {
+  margin-left: 9px;
+}
+
+.header__hero--list__item--skeleton {
+  margin-top: 8px;
+  width: 118px;
+  height: 4px;
+  border-radius: 10px;
+  opacity: 0.08;
+  background: #000958;
+}
+
+.header__hero--list__item--separate {
+  width: 222px;
+  border: 2px solid #f2f2f2;
+  margin: 20px 0;
+}
+
+.header__content {
+  width: 517px;
+  height: 440px;
+  border-radius: 31px;
+}
+
+.header__title {
+  font-family: Sora;
+  font-size: 6.6rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: left;
+  color: #000958;
+}
+
+.header__desc {
+  margin-top: 2.4rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+  color: #656689;
+}
+
+.header__actions {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  margin-right: 24px;
+  display: flex;
+  min-width: 189px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0px 13px 26px -8px #ff5b2e6b;
+  background: #ff5b2e;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__content--btn {
+  display: block;
+  margin-right: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header__btn--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background: #fffaf5;
+  box-shadow: 4px 3px 10px -1px #bf290066;
+  border-radius: 50%;
+}
+
+.header__link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #000958;
+  text-decoration: underline;
 }
