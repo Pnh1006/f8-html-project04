@@ -1257,7 +1257,8 @@ h6 {
 
 .footer__left {
   width: 42%;
-  padding: 114px 0 148px;
+  padding: 114px 0 148px 100px;
+  background: #fff6ed;
 }
 
 .footer__right {
